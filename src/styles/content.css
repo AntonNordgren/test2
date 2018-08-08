@@ -1,0 +1,44 @@
+
+#content {
+    position: relative;
+    flex: 1;
+    min-height: 1px;
+    width: 1100px;
+    margin: auto;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imagesContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+}
+
+.imageDiv {
+}
+
+.imageDiv img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    opacity: 1;
+    transition: transform 1s;
+}
+
+@media screen and (max-width: 950px){
+    #content {
+        width: 100%;
+    }
+    .imagesContent {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imageDiv img {
+        height: 250px;
+    }
+
+}
+
